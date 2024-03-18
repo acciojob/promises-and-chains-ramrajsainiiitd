@@ -9,9 +9,12 @@ submit.addEventListener('click',()=>{
     if (age >= 18){
       resolve(`Welcome, ${name} You can vote.`);
     }
-    else{
+    if(age<18&&age>0){
       reject(`Oh sorry ${name}. You aren't old enough.`);
     }
+	else{
+		reject(`Please enter valid details`);
+	}
   });
 
   promise.then(message => {

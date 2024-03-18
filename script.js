@@ -7,7 +7,7 @@ submit.addEventListener('click',()=>{
   
   let promise = new Promise(function(resolve, reject){
     if (age >= 18){
-      resolve(`Welcome, ${name} You can vote.`);
+      resolve(`Welcome, ${name}. You can vote.`);
     }
     if(age<18&&age>0){
       reject(`Oh sorry ${name}. You aren't old enough.`);
